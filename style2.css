@@ -1,0 +1,566 @@
+/* ==========================================================
+   RESET
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+
+    width:100%;
+    height:100%;
+    overflow:hidden;
+
+    font-family:"Orbitron",sans-serif;
+
+    background:#000;
+    color:#ff3b3b;
+
+}
+
+/* ==========================================================
+   BACKGROUND
+========================================================== */
+
+#background{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+    radial-gradient(circle at center,#160000 0%,#070000 45%,#000000 100%);
+
+    z-index:-30;
+
+}
+
+/* ==========================================================
+   SCREEN
+========================================================== */
+
+#screen{
+
+    position:relative;
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* ==========================================================
+   TOP BAR
+========================================================== */
+
+#topBar{
+
+    height:70px;
+
+    padding:0 45px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-bottom:1px solid rgba(255,0,0,.25);
+
+    background:rgba(0,0,0,.35);
+
+    backdrop-filter:blur(5px);
+
+}
+
+.logo{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    letter-spacing:4px;
+
+    color:#ff2a2a;
+
+    text-shadow:
+    0 0 8px #ff0000,
+    0 0 20px #ff0000;
+
+}
+
+.status{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+#statusDot{
+
+    width:14px;
+
+    height:14px;
+
+    border-radius:50%;
+
+    background:#00ff55;
+
+    box-shadow:
+    0 0 10px #00ff55,
+    0 0 20px #00ff55;
+
+}
+
+#statusText{
+
+    font-size:15px;
+
+    color:#ffffff;
+
+    letter-spacing:2px;
+
+}
+
+/* ==========================================================
+   MAIN PANEL
+========================================================== */
+
+#mainPanel{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+/* ==========================================================
+   WARNING ICON
+========================================================== */
+
+#warningIcon{
+
+    font-size:90px;
+
+    margin-bottom:25px;
+
+    color:#ff0000;
+
+    text-shadow:
+
+    0 0 15px red,
+    0 0 35px red,
+    0 0 70px red;
+
+}
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+#mainTitle{
+
+    font-size:58px;
+
+    font-weight:800;
+
+    letter-spacing:6px;
+
+    color:#ff4444;
+
+    text-shadow:
+
+    0 0 10px red,
+    0 0 35px red;
+
+}
+
+#subTitle{
+
+    margin-top:18px;
+
+    font-size:20px;
+
+    letter-spacing:4px;
+
+    color:#cccccc;
+
+}
+
+/* ==========================================================
+   TERMINAL
+========================================================== */
+
+#terminal{
+
+    margin-top:45px;
+
+    width:850px;
+
+    max-width:90%;
+
+    height:260px;
+
+    border:2px solid rgba(255,0,0,.45);
+
+    background:rgba(10,0,0,.75);
+
+    box-shadow:
+    0 0 30px rgba(255,0,0,.25);
+
+    overflow:hidden;
+
+}
+
+#terminalHeader{
+
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-left:20px;
+
+    background:#280000;
+
+    border-bottom:1px solid rgba(255,0,0,.35);
+
+    letter-spacing:3px;
+
+    font-size:15px;
+
+}
+
+#terminalBody{
+
+    padding:18px;
+
+    height:calc(100% - 42px);
+
+    overflow:hidden;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    color:#ff4d4d;
+
+}
+
+/* ==========================================================
+   LOADING
+========================================================== */
+
+#loadingSection{
+
+    width:850px;
+
+    max-width:90%;
+
+    margin-top:35px;
+
+}
+
+#loadingLabel{
+
+    margin-bottom:12px;
+
+    letter-spacing:3px;
+
+}
+
+#loadingBar{
+
+    width:100%;
+
+    height:18px;
+
+    border:1px solid rgba(255,0,0,.4);
+
+    background:#120000;
+
+    overflow:hidden;
+
+}
+
+#loadingFill{
+
+    width:0%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #ff0000,
+        #ff5050,
+        #ff0000
+    );
+
+    box-shadow:
+
+    0 0 12px red,
+    0 0 30px red;
+
+}
+
+#loadingPercent{
+
+    margin-top:12px;
+
+    font-size:17px;
+
+    letter-spacing:3px;
+
+}
+
+/* ==========================================================
+   INFO PANEL
+========================================================== */
+
+#scanInfo{
+
+    margin-top:45px;
+
+    width:850px;
+
+    max-width:90%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+}
+
+.infoRow{
+
+    flex:1;
+
+    border:1px solid rgba(255,0,0,.35);
+
+    background:rgba(25,0,0,.45);
+
+    padding:18px;
+
+}
+
+.label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#999;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+}
+
+.value{
+
+    color:#ff4444;
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================================
+   EFFECT LAYERS
+========================================================== */
+
+#redFlash,
+#scanLines,
+#noise,
+#crackLayer,
+#particleCanvas{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+}
+
+#redFlash{
+
+    background:red;
+
+    opacity:0;
+
+    z-index:150;
+
+}
+
+#scanLines{
+
+    z-index:120;
+
+    opacity:.08;
+
+    background:
+
+    repeating-linear-gradient(
+
+        transparent 0px,
+        transparent 3px,
+
+        rgba(255,255,255,.08) 4px,
+
+        transparent 5px
+
+    );
+
+}
+
+#noise{
+
+    z-index:121;
+
+    opacity:.04;
+
+    mix-blend-mode:screen;
+
+}
+
+/* ==========================================================
+   FIREWALL
+========================================================== */
+
+#crackLayer{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:180;
+
+    opacity:0;
+
+    background-repeat:no-repeat;
+
+    background-position:center;
+
+    background-size:cover;
+
+    pointer-events:none;
+
+    mix-blend-mode:screen;
+
+}
+
+#particleCanvas{
+
+    z-index:200;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:900px){
+
+#mainTitle{
+
+    font-size:34px;
+
+}
+
+#warningIcon{
+
+    font-size:70px;
+
+}
+
+#terminal{
+
+    height:220px;
+
+}
+
+#scanInfo{
+
+    flex-direction:column;
+
+}
+
+}
+/* ==========================================================
+   GLITCH OPTIMIZATION
+========================================================== */
+
+#screen{
+
+    will-change:
+    transform,
+    filter,
+    clip-path;
+
+    transform-origin:center;
+
+    backface-visibility:hidden;
+
+}
+
+/* ==========================================================
+   TERMINAL
+========================================================== */
+
+.terminal-line{
+
+    margin-bottom:8px;
+
+    color:#ff5555;
+
+    letter-spacing:1px;
+
+    white-space:pre-wrap;
+
+}
+
+#terminalCursor{
+
+    color:#ff2222;
+
+    animation:blinkCursor .7s infinite;
+
+}
+
+@keyframes blinkCursor{
+
+    50%{
+
+        opacity:0;
+
+    }
+
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Security Breach</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================================================
+         BACKGROUND
+    =========================================================== -->
+
+    <div id="background"></div>
+    <div id="scanLines"></div>
+    <div id="noise"></div>
+
+    <!-- ==========================================================
+         FLASH EFFECT
+    =========================================================== -->
+
+    <div id="redFlash"></div>
+
+    <!-- ==========================================================
+         CAMERA SHAKE WRAPPER
+    =========================================================== -->
+
+    <div id="screen">
+
+        <!-- ==========================================
+             TOP BAR
+        =========================================== -->
+
+        <header id="topBar">
+
+            <div class="logo">
+                AI SECURITY CORE
+            </div>
+
+            <div class="status">
+
+                <span id="statusDot"></span>
+
+                <span id="statusText">
+                    ONLINE
+                </span>
+
+            </div>
+
+        </header>
+
+        <!-- ==========================================
+             MAIN CONTENT
+        =========================================== -->
+
+        <main id="mainPanel">
+
+            <!-- Warning Icon -->
+            <div id="warningIcon">
+
+                ⚠
+
+            </div>
+
+            <!-- Main Title -->
+            <h1 id="mainTitle">
+
+                INITIALIZING...
+
+            </h1>
+
+            <!-- Subtitle -->
+            <p id="subTitle">
+
+                Preparing Secure Environment
+
+            </p>
+
+            <!-- ==================================================
+                 TERMINAL WINDOW
+            =================================================== -->
+
+            <section id="terminal">
+
+                <div id="terminalHeader">
+
+                    SYSTEM LOG
+
+                </div>
+
+                <div id="terminalBody">
+
+                    <!-- JS will insert lines here -->
+
+                </div>
+
+            </section>
+
+            <!-- ==================================================
+                 LOADING BAR
+            =================================================== -->
+
+            <section id="loadingSection">
+
+                <div id="loadingLabel">
+
+                    Progress
+
+                </div>
+
+                <div id="loadingBar">
+
+                    <div id="loadingFill"></div>
+
+                </div>
+
+                <div id="loadingPercent">
+
+                    0%
+
+                </div>
+
+            </section>
+
+            <!-- ==================================================
+                 SCAN INFORMATION
+            =================================================== -->
+
+            <section id="scanInfo">
+
+                <div class="infoRow">
+
+                    <span class="label">
+                        Identity
+                    </span>
+
+                    <span class="value" id="identityStatus">
+                        UNKNOWN
+                    </span>
+
+                </div>
+
+                <div class="infoRow">
+
+                    <span class="label">
+                        Threat Level
+                    </span>
+
+                    <span class="value" id="threatStatus">
+                        LOW
+                    </span>
+
+                </div>
+
+                <div class="infoRow">
+
+                    <span class="label">
+                        Firewall
+                    </span>
+
+                    <span class="value" id="firewallStatus">
+                        STABLE
+                    </span>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- ==========================================================
+         GLASS CRACK LAYER
+    =========================================================== -->
+
+    <div id="crackLayer"></div>
+
+    <!-- ==========================================================
+         PARTICLE LAYER
+    =========================================================== -->
+
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- ==========================================================
+         AUDIO
+    =========================================================== -->
+
+<audio id="alarmSound" src="alarm.mp3" preload="auto"></audio>
+<audio id="glitchSound" src="glitch.mp3".mp3" preload="auto"></audio>
+<audio id="explosionSound" src="explosion.mp3" preload="auto"></audio>
+<audio id="typingSound" src="typing.mp3" preload="auto"></audio>
+<audio id="successSound" src="assets/success.mp3" preload="auto"></audio>
+<audio id="electricSound" src="assets/electric.mp3" preload="auto"></audio>
+
+    <!-- ==========================================================
+         JAVASCRIPT
+    =========================================================== -->
+
+    <script src="glitch.js"></script>
+    <script src="shake.js"></script>
+    <script src="firewall.js"></script>
+    <script src="particles.js"></script>
+    <script src="tyoing.js"></script>
+    <script src="ui.js"></script>
+    
+    <script src="script2.js"></script>
+
+</body>
+
+</html>
